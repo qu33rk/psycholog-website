@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import ThemeToggle from "@/components/ThemeToggle";
 
@@ -63,9 +65,9 @@ export default function Home() {
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm border-b border-gray-100 dark:border-gray-800">
         <nav className="mx-auto flex max-w-6xl items-center justify-between px-8 md:px-6 py-4">
-          <Link href="/" className="text-xl font-semibold text-gray-900 dark:text-white">
+          <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="text-xl font-semibold text-gray-900 dark:text-white cursor-pointer">
             Wiktoria Szparaga.
-          </Link>
+          </a>
           <ul className="hidden items-center gap-8 md:flex">
             <li>
               <a href="#o-mnie" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors">

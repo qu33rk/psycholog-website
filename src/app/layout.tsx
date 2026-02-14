@@ -14,7 +14,7 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: "Psycholog Bydgoszcz - Wiktoria Szparaga | Terapia indywidualna i dla par",
-  description: "Psycholog Bydgoszcz - Wiktoria Szparaga. Terapia poznawczo-behawioralna, konsultacje indywidualne, wsparcie dla par. Gabinet ul. Czackiego oraz wizyty online. Umów wizytę!",
+  description: "Psycholog Bydgoszcz - Wiktoria Szparaga. Terapia poznawczo-behawioralna, konsultacje indywidualne i dla par. Umów wizytę!",
   alternates: {
     canonical: "https://wiktoriaszparaga.pl/",
   },
