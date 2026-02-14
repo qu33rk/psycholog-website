@@ -13,8 +13,18 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Wiktoria Szparaga - Psycholog Bydgoszcz",
-  description: "Psycholog w Bydgoszczy. Konsultacje indywidualne, wsparcie dla par, rozwój osobisty. Odzyskaj spokój i harmonię w swoim życiu.",
+  title: "Psycholog Bydgoszcz - Wiktoria Szparaga | Terapia indywidualna i dla par",
+  description: "Psycholog Bydgoszcz - Wiktoria Szparaga. Terapia poznawczo-behawioralna, konsultacje indywidualne, wsparcie dla par. Gabinet ul. Czackiego oraz wizyty online. Umów wizytę!",
+  alternates: {
+    canonical: "https://wiktoriaszparaga.pl/",
+  },
+  openGraph: {
+    title: "Psycholog Bydgoszcz - Wiktoria Szparaga",
+    description: "Psycholog w Bydgoszczy. Terapia poznawczo-behawioralna, konsultacje indywidualne i wsparcie dla par.",
+    type: "website",
+    locale: "pl_PL",
+    url: "https://wiktoriaszparaga.pl/",
+  },
 };
 
 export default function RootLayout({

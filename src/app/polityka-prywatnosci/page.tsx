@@ -41,7 +41,7 @@ export default function PolitykaPrywatnosci() {
             </h2>
             <p className="mt-4 text-gray-600 dark:text-gray-300 leading-relaxed">
               Administratorem Twoich danych osobowych jest Wiktoria Szparaga, prowadząca działalność 
-              pod adresem ul. Gdańska 10/4, 85-006 Bydgoszcz. W sprawach związanych z ochroną danych 
+              pod adresem ul. Tadeusza Czackiego 45/27, Bydgoszcz. W sprawach związanych z ochroną danych 
               osobowych możesz kontaktować się pod adresem e-mail: kontakt@wiktoriaszparaga.pl
             </p>
           </section>
@@ -111,7 +111,7 @@ export default function PolitykaPrywatnosci() {
             </p>
             <p className="mt-4 text-gray-600 dark:text-gray-300">
               E-mail: kontakt@wiktoriaszparaga.pl<br />
-              Adres: ul. Gdańska 10/4, 85-006 Bydgoszcz
+              Adres: ul. Tadeusza Czackiego 45/27, Bydgoszcz
             </p>
           </section>
         </div>
