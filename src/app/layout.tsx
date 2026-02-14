@@ -14,7 +14,7 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: "Wiktoria Szparaga - Psycholog Bydgoszcz",
-  description: "Psycholog i psychoterapeuta w Bydgoszczy. Terapia indywidualna, terapia par, rozwój osobisty. Odzyskaj spokój i harmonię w swoim życiu.",
+  description: "Psycholog w Bydgoszczy. Konsultacje indywidualne, wsparcie dla par, rozwój osobisty. Odzyskaj spokój i harmonię w swoim życiu.",
 };
 
 export default function RootLayout({
