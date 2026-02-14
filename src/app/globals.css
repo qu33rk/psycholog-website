@@ -2,6 +2,15 @@
 
 @theme inline {
   --font-sans: var(--font-inter);
+  --font-serif: var(--font-playfair);
+  
+  /* Colors */
+  --color-cream: #FDF8F3;
+  --color-cream-dark: #F5EDE4;
+  --color-coral: #E8956A;
+  --color-coral-dark: #D4805A;
+  --color-teal: #1A3A3A;
+  --color-teal-light: #2A4A4A;
 }
 
 html {

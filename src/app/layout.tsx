@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -7,9 +7,14 @@ const inter = Inter({
   subsets: ["latin", "latin-ext"],
 });
 
+const playfair = Playfair_Display({
+  variable: "--font-playfair",
+  subsets: ["latin", "latin-ext"],
+});
+
 export const metadata: Metadata = {
-  title: "Psycholog - Gabinet Psychologiczny",
-  description: "Profesjonalna pomoc psychologiczna. Terapia indywidualna, konsultacje psychologiczne.",
+  title: "Wiktoria Szparaga - Psycholog Bydgoszcz",
+  description: "Psycholog i psychoterapeuta w Bydgoszczy. Terapia indywidualna, terapia par, rozwój osobisty. Odzyskaj spokój i harmonię w swoim życiu.",
 };
 
 export default function RootLayout({
@@ -19,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl">
-      <body className={`${inter.variable} font-sans antialiased`}>
+      <body className={`${inter.variable} ${playfair.variable} font-sans antialiased`}>
         {children}
       </body>
     </html>
