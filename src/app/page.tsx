@@ -64,8 +64,8 @@ export default function Home() {
     <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors">
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm border-b border-gray-100 dark:border-gray-800">
-        <nav className="mx-auto flex max-w-6xl items-center justify-between px-8 md:px-6 py-4">
-          <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="text-xl font-semibold text-gray-900 dark:text-white cursor-pointer">
+        <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 sm:px-6 md:px-8 py-4">
+          <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="text-base sm:text-xl font-semibold text-gray-900 dark:text-white cursor-pointer whitespace-nowrap">
             Wiktoria Szparaga.
           </a>
           <ul className="hidden items-center gap-8 md:flex">
@@ -90,9 +90,10 @@ export default function Home() {
               href="https://www.znanylekarz.pl/z/qGWhR5"
               target="_blank"
               rel="noopener noreferrer nofollow"
-              className="rounded-lg bg-coral px-5 py-2.5 text-sm font-medium text-white hover:bg-coral-dark transition-colors"
+              className="rounded-lg bg-coral px-3 py-2 sm:px-5 sm:py-2.5 text-xs sm:text-sm font-medium text-white hover:bg-coral-dark transition-colors whitespace-nowrap"
             >
-              Zapisz się na wizytę
+              <span className="hidden sm:inline">Zapisz się na wizytę</span>
+              <span className="sm:hidden">Wizyta</span>
             </a>
             <ThemeToggle />
           </div>
@@ -106,7 +107,7 @@ export default function Home() {
         <div className="absolute top-40 -right-20 w-72 h-72 bg-teal/10 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
         <div className="absolute -bottom-20 left-1/2 w-72 h-72 bg-coral/10 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
         
-        <div className="mx-auto max-w-6xl px-8 md:px-6 py-16 md:py-24 relative z-10">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 md:px-8 py-16 md:py-24 relative z-10">
           <div className="grid gap-12 md:grid-cols-2 md:items-center">
             <div>
               <div className="inline-flex items-center gap-2 text-xs font-medium text-coral tracking-wide mb-6 bg-coral/10 px-4 py-2 rounded-full">
@@ -164,7 +165,7 @@ export default function Home() {
                 />
               </div>
               
-              <div className="absolute bottom-6 right-0 md:right-4 glass dark:bg-gray-700/90 rounded-2xl shadow-xl px-5 py-4 flex items-center gap-4 border border-white/20">
+              <div className="absolute bottom-4 right-2 sm:bottom-6 sm:right-4 glass dark:bg-gray-700/90 rounded-2xl shadow-xl px-4 py-3 sm:px-5 sm:py-4 flex items-center gap-3 sm:gap-4 border border-white/20">
                 <div className="w-12 h-12 rounded-full bg-gradient-to-br from-teal to-teal-dark flex items-center justify-center text-white shadow-lg">
                   <LocationIcon />
                 </div>
@@ -181,7 +182,7 @@ export default function Home() {
       {/* Quote Section */}
       <section className="py-20 md:py-28 dark:bg-gray-900 relative">
         <div className="absolute inset-0 dots-pattern opacity-5"></div>
-        <div className="mx-auto max-w-3xl px-8 md:px-6 text-center relative">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 md:px-8 text-center relative">
           <div className="flex justify-center mb-8">
             <span className="text-coral text-7xl font-serif opacity-80">&quot;</span>
           </div>
@@ -200,12 +201,12 @@ export default function Home() {
 
       {/* O mnie Section */}
       <section id="o-mnie" className="py-16 md:py-20 dark:bg-gray-900">
-        <div className="mx-auto max-w-6xl px-8 md:px-6">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 md:px-8">
           <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
-            <div className="flex gap-8 justify-center lg:justify-start items-end">
+            <div className="flex gap-4 sm:gap-8 justify-center lg:justify-start items-end flex-wrap">
               {/* Książka */}
               <div className="animate-float">
-                <svg width="160" height="210" viewBox="0 0 120 160" fill="none" xmlns="http://www.w3.org/2000/svg" className="drop-shadow-lg hover:scale-105 transition-transform duration-300">
+                <svg width="140" height="184" viewBox="0 0 120 160" fill="none" xmlns="http://www.w3.org/2000/svg" className="drop-shadow-lg hover:scale-105 transition-transform duration-300 max-w-[140px] sm:w-[160px] sm:h-[210px] w-full h-auto">
                   {/* Grzbiet książki */}
                   <path d="M15 20 L15 145 Q15 150 20 150 L25 150 L25 15 Q25 10 20 10 L20 10 Q15 10 15 20Z" fill="#1A3A3A"/>
                   {/* Okładka tylna */}
@@ -229,7 +230,7 @@ export default function Home() {
               
               {/* Kot */}
               <div className="animate-float-delayed">
-                <svg width="170" height="180" viewBox="0 0 130 140" fill="none" xmlns="http://www.w3.org/2000/svg" className="drop-shadow-lg hover:scale-105 transition-transform duration-300">
+                <svg width="150" height="159" viewBox="0 0 130 140" fill="none" xmlns="http://www.w3.org/2000/svg" className="drop-shadow-lg hover:scale-105 transition-transform duration-300 max-w-[150px] sm:w-[170px] sm:h-[180px] w-full h-auto">
                   {/* Ogon */}
                   <path d="M100 95 Q130 80 120 55 Q118 50 115 52 Q110 70 95 85" fill="#1A3A3A" stroke="#1A3A3A" strokeWidth="2"/>
                   {/* Ciało */}
@@ -315,7 +316,7 @@ Ukończyłam studia psychologiczne ze specjalnością psychologia kliniczna.
       {/* Obszary wsparcia Section */}
       <section id="oferta" className="py-20 md:py-28 bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 relative">
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-coral/20 to-transparent"></div>
-        <div className="mx-auto max-w-6xl px-8 md:px-6">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 md:px-8">
           <div className="text-center max-w-2xl mx-auto">
             <span className="inline-block text-coral text-sm font-medium tracking-wider uppercase mb-4">Oferta</span>
             <h2 className="font-serif text-3xl md:text-4xl font-medium text-gray-900 dark:text-white">
@@ -433,7 +434,7 @@ Ukończyłam studia psychologiczne ze specjalnością psychologia kliniczna.
         <div className="absolute top-20 right-0 w-96 h-96 bg-coral/10 rounded-full blur-3xl opacity-50"></div>
         <div className="absolute bottom-20 left-0 w-96 h-96 bg-teal/10 rounded-full blur-3xl opacity-50"></div>
         
-        <div className="mx-auto max-w-6xl px-8 md:px-6 relative z-10">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 md:px-8 relative z-10">
           <div className="grid gap-8 lg:grid-cols-2">
             {/* Left - Contact Card */}
             <div className="bg-white dark:bg-gray-700 rounded-3xl p-8 md:p-10 shadow-xl">
@@ -543,7 +544,7 @@ Ukończyłam studia psychologiczne ze specjalnością psychologia kliniczna.
 
       {/* Footer */}
       <footer className="bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800 py-8">
-        <div className="mx-auto max-w-6xl px-8 md:px-6">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 md:px-8">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div>
               <p className="font-semibold text-gray-900 dark:text-white">Wiktoria Szparaga</p>
@@ -562,7 +563,7 @@ Ukończyłam studia psychologiczne ze specjalnością psychologia kliniczna.
             <p className="text-xs text-gray-400 dark:text-gray-500">
               Developed by{" "}
               <a
-                href="https://www.linkedin.com/in/eryk-witkowski/"
+                href="https://erykwitkowski.pl"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
